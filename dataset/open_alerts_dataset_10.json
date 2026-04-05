@@ -1,0 +1,142 @@
+[
+  {
+    "description": "Storage node STG-04 has experienced an unexpected drop in disk throughput to 0.1 MB/s. This abnormality could severely impact the performance of applications that rely on swift data access. The situation needs urgent attention to rule out hardware issues. Users may face degradation in service quality if the situation is not rectified.",
+    "features": {
+      "CPU_utilization": 0.1,
+      "num_running_processes": 15,
+      "IO_operations": 20,
+      "disk_throughput": 0.1,
+      "free_storage": 0.7,
+      "packet_loss": 0.01,
+      "active_connections": 20
+    },
+    "timestamp": "2026-03-05T22:06:37.936185",
+    "id": 451
+  },
+  {
+    "description": "Web Server Node-3 has a packet loss rate of 15%, which has been consistent for the past hour. This is likely due to network congestion or faulty routing equipment.",
+    "features": {
+      "CPU_utilization": 0.3,
+      "num_running_processes": 45,
+      "IO_operations": 210,
+      "disk_throughput": 10.6,
+      "free_storage": 0.92,
+      "packet_loss": 0.15,
+      "active_connections": 89
+    },
+    "timestamp": "2026-03-05T10:35:08.936173",
+    "id": 452
+  },
+  {
+    "description": "Service G13 is experiencing low CPU utilization, suggesting that the allocated resources are underutilized.",
+    "features": {
+      "CPU_utilization": 0.12,
+      "num_running_processes": 50,
+      "IO_operations": 100,
+      "disk_throughput": 45.5,
+      "free_storage": 0.9,
+      "packet_loss": 0.0,
+      "active_connections": 50
+    },
+    "timestamp": "2026-03-05T08:54:31.936142",
+    "id": 453
+  },
+  {
+    "description": "Cache-Server-03 in Cluster-Cache-North is using 96% of its CPU capacity. Cache misses are increasing, which is causing a heavier load on backend databases.",
+    "features": {
+      "CPU_utilization": 0.96,
+      "num_running_processes": 56,
+      "IO_operations": 1200,
+      "disk_throughput": 32.5,
+      "free_storage": 0.85,
+      "packet_loss": 0.0,
+      "active_connections": 435
+    },
+    "timestamp": "2026-03-04T20:29:02.936228",
+    "id": 454
+  },
+  {
+    "description": "Node Cache-04 is reporting high memory usage. This is impacting the node\u2019s ability to process new cache requests efficiently.",
+    "features": {
+      "CPU_utilization": 0.65,
+      "num_running_processes": 150,
+      "IO_operations": 500,
+      "disk_throughput": 12.0,
+      "free_storage": 0.92,
+      "packet_loss": 0.0,
+      "active_connections": 125
+    },
+    "timestamp": "2026-03-04T20:00:16.936188",
+    "id": 455
+  },
+  {
+    "description": "LoadBalancer-08 reports a sudden spike in packet loss, which may indicate underlying network congestion or a failing interface.",
+    "features": {
+      "CPU_utilization": 0.67,
+      "num_running_processes": 60,
+      "IO_operations": 950,
+      "disk_throughput": 15.3,
+      "free_storage": 0.9,
+      "packet_loss": 0.15,
+      "active_connections": 2200
+    },
+    "timestamp": "2026-03-04T15:19:56.936202",
+    "id": 456
+  },
+  {
+    "description": "Cloud instance J890 is experiencing a packet loss of 3%, which is leading to connectivity problems for users. This is causing disruptions in service and affecting overall system performance. Immediate troubleshooting of network components is necessary to identify the source of loss. Quick resolution is essential to maintain user satisfaction.",
+    "features": {
+      "CPU_utilization": 0.5,
+      "num_running_processes": 75,
+      "IO_operations": 250,
+      "disk_throughput": 35.0,
+      "free_storage": 0.4,
+      "packet_loss": 0.03,
+      "active_connections": 180
+    },
+    "timestamp": "2026-03-04T14:49:09.936210",
+    "id": 457
+  },
+  {
+    "description": "Alert ID: ALRT-007 reports high memory usage detected on Cache Node 2. Memory utilization has hit 95%, which could lead to performance degradation or application crashes. This high usage could indicate excessive caching or a memory leak in the application. Monitoring should be increased to prevent further issues.",
+    "features": {
+      "CPU_utilization": 0.4,
+      "num_running_processes": 20,
+      "IO_operations": 90,
+      "disk_throughput": 10.0,
+      "free_storage": 0.85,
+      "packet_loss": 0.0,
+      "active_connections": 15
+    },
+    "timestamp": "2026-03-04T10:39:37.936212",
+    "id": 458
+  },
+  {
+    "description": "Node-123 is reporting 30% packet loss on its network interface, causing connectivity issues with downstream services.",
+    "features": {
+      "CPU_utilization": 0.45,
+      "num_running_processes": 80,
+      "IO_operations": 800,
+      "disk_throughput": 100.0,
+      "free_storage": 0.7,
+      "packet_loss": 0.3,
+      "active_connections": 1200
+    },
+    "timestamp": "2026-03-04T04:47:49.935979",
+    "id": 459
+  },
+  {
+    "description": "Alert ID: A005. Node 'app-server-04' has 15 active connections but is facing unexpected latency issues. This could indicate a problem in the application layer or with external API calls. A thorough review of application logs is advised.",
+    "features": {
+      "CPU_utilization": 0.75,
+      "num_running_processes": 25,
+      "IO_operations": 100,
+      "disk_throughput": 10.0,
+      "free_storage": 0.45,
+      "packet_loss": 0.01,
+      "active_connections": 15
+    },
+    "timestamp": "2026-03-04T03:26:00.935991",
+    "id": 460
+  }
+]

@@ -1,0 +1,152 @@
+[
+    {
+        "description": "Server Node-001 experienced a CPU spike, reaching 95% utilization consistently over the last 10 minutes. This is causing delays in processing user requests.",
+        "features": {
+            "CPU_utilization": 0.95,
+            "num_running_processes": 150,
+            "IO_operations": 1200,
+            "disk_throughput": 250.0,
+            "free_storage": 0.6,
+            "packet_loss": 0.02,
+            "active_connections": 500
+        },
+        "severity": 4,
+        "risk": "Prolonged high CPU usage could lead to system crashes and significant service degradation.",
+        "resolution": "Investigate the processes consuming the CPU and terminate unnecessary ones. Consider scaling resources or optimizing the workloads."
+    },
+    {
+        "description": "Node-123 is reporting 30% packet loss on its network interface, causing connectivity issues with downstream services.",
+        "features": {
+            "CPU_utilization": 0.45,
+            "num_running_processes": 80,
+            "IO_operations": 800,
+            "disk_throughput": 100.0,
+            "free_storage": 0.7,
+            "packet_loss": 0.3,
+            "active_connections": 1200
+        },
+        "severity": 5,
+        "risk": "Network disruption could cause significant delays and failures in service delivery, impacting user experience.",
+        "resolution": "Check the network interface for hardware issues or misconfigurations. Review network routing and consider rerouting traffic if necessary."
+    },
+    {
+        "description": "Storage Node-12 is running out of disk space, with only 5% free storage remaining. This could impact data writes and lead to potential errors.",
+        "features": {
+            "CPU_utilization": 0.3,
+            "num_running_processes": 50,
+            "IO_operations": 400,
+            "disk_throughput": 200.0,
+            "free_storage": 0.05,
+            "packet_loss": 0.01,
+            "active_connections": 300
+        },
+        "severity": 4,
+        "risk": "Insufficient storage could lead to data loss or inability to store new data.",
+        "resolution": "Free up disk space by deleting unnecessary files or moving data to other nodes. Plan for storage expansion to prevent future bottlenecks."
+    },
+    {
+        "description": "Server Node-045 reports unusually high I/O operations, over 3000 per second, indicating potential disk stress.",
+        "features": {
+            "CPU_utilization": 0.6,
+            "num_running_processes": 200,
+            "IO_operations": 3200,
+            "disk_throughput": 500.0,
+            "free_storage": 0.3,
+            "packet_loss": 0.01,
+            "active_connections": 800
+        },
+        "severity": 3,
+        "risk": "Continued high I/O could degrade disk performance and slow down critical operations.",
+        "resolution": "Analyze the source of high I/O operations and optimize disk-intensive processes. Consider upgrading the disk or implementing caching mechanisms."
+    },
+    {
+        "description": "Load Balancer LB-02 has 2500 active connections, nearing its maximum capacity. This could lead to connection drops if traffic increases further.",
+        "features": {
+            "CPU_utilization": 0.7,
+            "num_running_processes": 100,
+            "IO_operations": 600,
+            "disk_throughput": 150.0,
+            "free_storage": 0.8,
+            "packet_loss": 0.02,
+            "active_connections": 2500
+        },
+        "severity": 3,
+        "risk": "Traffic surges could overwhelm the load balancer, leading to service outages.",
+        "resolution": "Scale the load balancer or distribute traffic among multiple load balancers. Monitor traffic trends to identify peak times."
+    },
+    {
+        "description": "Database Node-DB1 encountered a sudden memory spike, causing the CPU to operate at 85% utilization. Query response times have also increased by 40%.",
+        "features": {
+            "CPU_utilization": 0.85,
+            "num_running_processes": 120,
+            "IO_operations": 700,
+            "disk_throughput": 400.0,
+            "free_storage": 0.5,
+            "packet_loss": 0.0,
+            "active_connections": 600
+        },
+        "severity": 5,
+        "risk": "Prolonged memory and CPU strain could lead to the database becoming unresponsive.",
+        "resolution": "Optimize queries and redistribute load to secondary databases. Increase memory allocation to prevent future spikes."
+    },
+    {
+        "description": "Node-89 is experiencing moderate CPU utilization at 60% but shows signs of consistent packet loss (10%).",
+        "features": {
+            "CPU_utilization": 0.6,
+            "num_running_processes": 100,
+            "IO_operations": 500,
+            "disk_throughput": 300.0,
+            "free_storage": 0.4,
+            "packet_loss": 0.1,
+            "active_connections": 700
+        },
+        "severity": 2,
+        "risk": "Packet loss could degrade performance and lead to intermittent connectivity issues.",
+        "resolution": "Analyze network traffic and inspect the physical network connection. Consider increasing network bandwidth or replacing faulty cables."
+    },
+    {
+        "description": "Server Node-077 has disk throughput of only 50 MB/s, much lower than expected for its workload. This is slowing down data processing tasks.",
+        "features": {
+            "CPU_utilization": 0.4,
+            "num_running_processes": 75,
+            "IO_operations": 1000,
+            "disk_throughput": 50.0,
+            "free_storage": 0.2,
+            "packet_loss": 0.0,
+            "active_connections": 400
+        },
+        "severity": 3,
+        "risk": "Low disk throughput could lead to increased latency in processing critical tasks.",
+        "resolution": "Investigate disk health and performance metrics. Consider replacing the disk or using RAID configurations to improve throughput."
+    },
+    {
+        "description": "Compute Node-56 is handling 1800 processes simultaneously, which is causing its CPU load to reach 90%.",
+        "features": {
+            "CPU_utilization": 0.9,
+            "num_running_processes": 1800,
+            "IO_operations": 1500,
+            "disk_throughput": 350.0,
+            "free_storage": 0.5,
+            "packet_loss": 0.03,
+            "active_connections": 1000
+        },
+        "severity": 4,
+        "risk": "Overloading the CPU with too many processes could result in service crashes and degraded performance.",
+        "resolution": "Reduce the number of concurrent processes by distributing tasks across additional compute nodes. Optimize process scheduling."
+    },
+    {
+        "description": "Node-004 has been idle for over 24 hours despite being part of the active cluster. Resource utilization is below 10% across all metrics.",
+        "features": {
+            "CPU_utilization": 0.1,
+            "num_running_processes": 10,
+            "IO_operations": 50,
+            "disk_throughput": 10.0,
+            "free_storage": 0.95,
+            "packet_loss": 0.0,
+            "active_connections": 5
+        },
+        "severity": 1,
+        "risk": "Idle resources can lead to unnecessary costs in the cloud infrastructure.",
+        "resolution": "Investigate why the node is idle and reallocate tasks to it. If not needed, consider shutting it down to save costs."
+    }
+]

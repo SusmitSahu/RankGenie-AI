@@ -1,0 +1,6 @@
+embedding_model = OpenAIEmbeddings(
+        base_url="https://genailab.tcs.in",
+        model="azure/genailab-maas-text-embedding-3-large",
+        api_key=api_key,
+        http_client=client
+    )
